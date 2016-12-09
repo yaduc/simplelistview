@@ -6,11 +6,22 @@ package com.cr.customlistview;
 
 public class SampleModel {
     private String name, description, date;
+    private  String img_url;
 
-    public SampleModel(String name, String description, String date) {
+
+    public SampleModel(String name, String description, String date, String img_url) {
         this.name = name;
         this.description = description;
         this.date = date;
+        this.img_url = img_url;
+    }
+
+    public String getImg_url() {
+        return img_url;
+    }
+
+    public void setImg_url(String img_url) {
+        this.img_url = img_url;
     }
 
     public String getName() {
@@ -25,8 +36,8 @@ public class SampleModel {
         return description;
     }
 
-    public void setDescription(String descroption) {
-        this.description = descroption;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getDate() {
